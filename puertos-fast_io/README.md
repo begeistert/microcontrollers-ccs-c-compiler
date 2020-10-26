@@ -18,7 +18,7 @@ Recuerda no olvidar las siguientes lineas de configuración, son fundamentales p
 #org 0x0000,0x1FFF {}                  ///< Reservación espacio en la memoría
 ```
 
-Para este ejemplo se ha usado un metodo de configuración denominado `SisInit()`, definido de la siguiente manera
+Para este programa se ha usado un metodo de configuración denominado `SisInit()`, definido de la siguiente manera
 
 
 ```c
