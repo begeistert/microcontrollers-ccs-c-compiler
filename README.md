@@ -4,7 +4,7 @@ Todos los programas requeridos serán almacenados en este repositorio incluyendo
 ## Indice
 ### 26 de Octubre
 1. [Puertos `fast_io`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/fast_io)
-2. [Puertos `standard_io`]()
+2. [Puertos `standard_io`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/standard_io)
 3. [Display LCD-funciones]()
 4. [Teclado Matricial]()
 
