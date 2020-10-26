@@ -16,13 +16,13 @@ Recuerda no olvidar las siguientes lineas de configuración, son fundamentales p
 ```c
 #include <18F45K50.h>                  ///< Importación de librería para el PIC
 #use delay(internal=48Mhz)             ///< Declaración de la frec. del Oscilador
-#use fast_io(A)                        ///< Configuracion E/S para el PORT A
-#use fast_io(B)                        ///< Configuracion E/S para el PORT B
+#use standard_io(A)                    ///< Configuracion E/S para el PORT A
+#use standard_io(B)                    ///< Configuracion E/S para el PORT B
 #build(reset=0x02000,interrupt=0x02008)///< Asignación de los vectores de reset e interrupción
 #org 0x0000,0x1FFF {}                  ///< Reservación espacio en la memoría
 ```
 
-Para este programa se ha usado un metodo de configuración denominado [`SisInit()`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L27), definido de la siguiente manera
+Para este programa se ha usado un metodo de configuración denominado [`SisInit()`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/f4610e37ce9313f6c1a660e468bdaa2b84d419a9/standard_io/standard_io.c#L29), definido de la siguiente manera
 
 
 ```c
@@ -33,7 +33,7 @@ void SisInit(){
 }
 ```
 
-Sin embargo, esto no es estrictamente necesario, es posible cambiar el nombre de la función o incluso añadirlo directamente al metodo [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41), por ejemplo
+Sin embargo, esto no es estrictamente necesario, es posible cambiar el nombre de la función o incluso añadirlo directamente al metodo [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/f4610e37ce9313f6c1a660e468bdaa2b84d419a9/standard_io/standard_io.c#L43), por ejemplo
 ```c
 void main(){
    set_tris_a(0XFF);  
@@ -42,9 +42,9 @@ void main(){
    ...
 }
 ```
-Dentro del método [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41) se han declarado condiciones que permiten una configuración _pull-up_ a la entrada, que sera el pin `A0`. La condición define que si
+Dentro del método [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/f4610e37ce9313f6c1a660e468bdaa2b84d419a9/standard_io/standard_io.c#L43) se han declarado condiciones que permiten una configuración _pull-up_ a la entrada, que sera el pin `A0`. La condición define que si
 `A0`== `0` el  _**LED**_ en `B0` (que funge como salida) se encenderá, en caso de que `A0` == `1` ocurrira que, `B0` tendrá a la salida `0` o `false` y el _**LED**_ se apagará
 
-** _Revisa el archivo [`fast_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c) para más información_
+** _Revisa el archivo [`standard_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/f4610e37ce9313f6c1a660e468bdaa2b84d419a9/standard_io/standard_io.c) para más información_
 
 ##### Iván Montiel Cardona
