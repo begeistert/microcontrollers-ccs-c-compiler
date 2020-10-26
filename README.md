@@ -1,6 +1,6 @@
 # Microcontroladores
 ## Programas en C para microcontrolador 18F45K50
-Todos los programas requeridos serán almacenados en este repositorio
+Todos los programas requeridos serán almacenados en este repositorio incluyendo un archivo `README.md` por ejercicio
 ## Indice
 ### 26 de Octubre
 1. [Puertos fast_io](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/puertos-fast_io)
