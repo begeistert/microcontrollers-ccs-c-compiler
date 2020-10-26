@@ -8,4 +8,4 @@ Todos los programas requeridos serán almacenados en este repositorio
 3. [Display LCD-funciones]()
 4. [Teclado Matricial]()
 
-## [Reporta un problema](https://github.com/begeistert/microcontrollers-ccs-c-compiler/issues)
+#### [Reporta un problema](https://github.com/begeistert/microcontrollers-ccs-c-compiler/issues)
