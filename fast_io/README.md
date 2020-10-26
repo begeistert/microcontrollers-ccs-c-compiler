@@ -41,6 +41,6 @@ void main(){
 Dentro del método `main` se han declarado condiciones que permiten una configuración _pull-up_ a la entrada, que sera el pin `A0`. La condición define que si
 `A0`== `0` el  _**LED**_ en `B0` (que funge como salida) se encenderá, en caso de que `A0` == `1` ocurrira que, `B0` tendrá a la salida `0` o `false` y el _**LED**_ se apagará
 
-** _Revisa el archivo `fast_io.c` para más información_
+** _Revisa el archivo [`fast_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c) para más información_
 
 ##### Iván Montiel Cardona
