@@ -1,10 +1,12 @@
 /**
-  @file puertos-fast_io.c
+  @file fast_io.c
   @brief Programa para apagar y encender un LED mediante un botón
 
   Mediante el puerto A0 conectado a un botón en pull-up se encendera un LED,
   si el pin A0 se encuentra en 0 el PIN B0 activara el LED de lo contrario lo
   apagará
+  
+  ** Se configuraran los puertos mediante fast_io()
 
   @author Iván Montiel Cardona
   @date 10/2020
