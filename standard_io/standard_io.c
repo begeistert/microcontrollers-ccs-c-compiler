@@ -20,29 +20,13 @@
 #org 0x0000,0x1FFF {}                  ///< Reservación espacio en la memoría
 
 /**
- * Inicializa los puertos A y B mediante la función set_tris_x()
- * El puerto A se define como salida
- * El puerto B se define como entrada
- * @param None.
- */
- 
-void SisInit(){
-                      ///                  Pin Numero: 0|1|2|3|4|5|6|7
-                      ///                              ---------------
-   output_a(0X00);    ///< La salida del puerto A es  (0|0|0|0|0|0|0|0)
-                      ///  Donde I->Input y O->Output
-}
-
-/**
  * Funcion principal, realizarará todas las operaciones cicladas que deseemos
  * @param None.
  */
 
 void main(){
 
-   SisInit();                ///< Configuración de los puertos del PIC
-   
-   while(1){                 ///< Inicio de bucle infinito
+   while(true){                 ///< Inicio de bucle infinito
                               
       if(input(PIN_A0) == 1){///< Condición: En tanto el pin A0 sea 1 o True
          
