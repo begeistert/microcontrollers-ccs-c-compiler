@@ -1,5 +1,5 @@
 # Programa 3 - Display de 7 segmentos de 0 a 99
-## Programa hacer un conteo de 0 a 99 en un display de 7 segmentos multiplexeado
+## Programa para hacer un conteo de 0 a 99 en un display de 7 segmentos multiplexeado
 
 ### Descripción:
 
@@ -7,12 +7,18 @@ Mediante un _**display de 7 segmentos doble**_, conectado al `PORT B` y sus habi
 mediante un multiplexeo del display doble, logrando así mostrar unidades y decenas
 
 La configuracion de los puertos se realiza usando `fast_io`
-- Esta directiva afecta al código que el compilador generará para las instrucciones de entrada y salida. Este método rápido de hacer I/O ocasiona que el compilador realice E/S sin programar el registro de dirección
+- Esta directiva afecta al código que el compilador generará para las instrucciones de entrada y salida. Este método rápido de hacer I/O ocasiona que el compilador realice I/O sin programar el registro de dirección
 
 ## Circuito
 
 <p align="center">
-  <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/fast_io.jpg?raw=true">
+  <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/display_0-99.jpg?raw=true">
+</p>
+
+### En caso de no disponer de un display doble, es posible realizar la sigiente configuración con dos displays independientes
+
+<p align="center">
+  <img src="http://www.redusers.com/noticias/wp-content/uploads/2016/01/Display_PinOut.jpg">
 </p>
 
 ### Instrucciones

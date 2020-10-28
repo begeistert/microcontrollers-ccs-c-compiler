@@ -1,5 +1,5 @@
 # Microcontroladores
-## Programas en C para microcontrolador 18F45K50
+## Programas en C para microcontrolador `18F45K50`
 Todos los programas requeridos serán almacenados en este repositorio incluyendo un archivo `README.md` por ejercicio
 ## Indice
 ### 28 de Octubre
