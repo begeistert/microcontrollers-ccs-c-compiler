@@ -12,7 +12,7 @@ La configuracion de los puertos se realiza usando `fast_io`
 ## Circuito
 
 <p align="center">
-  <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/fast_io.jpg?raw=true">
+  <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/display_0-99.jpg?raw=true">
 </p>
 
 ### Instrucciones
