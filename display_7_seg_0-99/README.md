@@ -1,5 +1,5 @@
 # Programa 3 - Display de 7 segmentos de 0 a 99
-## Programa hacer un conteo de 0 a 99 en un display de 7 segmentos multiplexeado
+## Programa para hacer un conteo de 0 a 99 en un display de 7 segmentos multiplexeado
 
 ### Descripción:
 
