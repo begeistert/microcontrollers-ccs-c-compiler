@@ -49,11 +49,9 @@ void main(){
             output_b(DISPLAY[ud]);
             delay_ms(50);
             if (dec==0) output_a(0x03);
-            
             else output_a(0x01);
-            
-               output_b(DISPLAY[dec]);
-               delay_ms(50);
+            output_b(DISPLAY[dec]);
+            delay_ms(50);
          }
       }
    }
