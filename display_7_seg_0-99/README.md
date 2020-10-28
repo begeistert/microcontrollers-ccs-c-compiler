@@ -7,7 +7,7 @@ Mediante un _**display de 7 segmentos doble**_, conectado al `PORT B` y sus habi
 mediante un multiplexeo del display doble, logrando así mostrar unidades y decenas
 
 La configuracion de los puertos se realiza usando `fast_io`
-- Esta directiva afecta al código que el compilador generará para las instrucciones de entrada y salida. Este método rápido de hacer I/O ocasiona que el compilador realice E/S sin programar el registro de dirección
+- Esta directiva afecta al código que el compilador generará para las instrucciones de entrada y salida. Este método rápido de hacer I/O ocasiona que el compilador realice I/O sin programar el registro de dirección
 
 ## Circuito
 
