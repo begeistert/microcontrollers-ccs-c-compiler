@@ -8,6 +8,12 @@ Mediante el puerto `A0` conectado a un botón en _pull-up_ se encendera un _**LE
 La configuracion de los puertos se realiza usando `fast_io`
 - Esta directiva afecta al código que el compilador generará para las instrucciones de entrada y salida. Este método rápido de hacer I/O ocasiona que el compilador realice E/S sin programar el registro de dirección
 
+## Circuito
+
+<p align="center">
+  <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/fast_io.jpg?raw=true">
+</p>
+
 ### Instrucciones
 
 Recuerda no olvidar las siguientes lineas de configuración, son fundamentales para el PIC `18F45K50`
@@ -50,7 +56,7 @@ Con el codigo anterior, los puertos A y B quedarian configurados de la siguente 
 |   B    | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  |
 
 Dentro del método [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41) se han declarado condiciones que permiten una configuración _pull-up_ a la entrada, la cual será el pin `A0`. La condición define que si
-`A0`== `0` el  _**LED**_ en `B0` (que funge como salida) se encenderá, en caso de que `A0` == `1` ocurrira que, `B0` tendrá a la salida `0` o `false` y el _**LED**_ se apagará
+`A0`== `0` el  _**LED**_ en `B0` (que funge como salida) se encenderá, en caso de que la condición `A0` == `1` se cumpla,  `B0` tendrá a la salida `0` o `false` y el _**LED**_ se apagará
 
 ** _Revisa el archivo [`fast_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c) para más información_
 
