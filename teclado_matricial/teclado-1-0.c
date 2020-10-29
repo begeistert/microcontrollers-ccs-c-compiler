@@ -17,7 +17,6 @@
 #define col0 PIN_B4       //Columnas del teclado
 #define col1 PIN_B5
 #define col2 PIN_B6
-#
 //#define col3 PIN_B7
 
 #include "Teclado4x3.h"                                     //LIBRERIA DE TECLADO
