@@ -23,8 +23,8 @@ Recuerda no olvidar las siguientes lineas de configuración, son fundamentales p
 ```c
 #include <18F45K50.h>                  ///< Importación de librería para el PIC
 #use delay(internal=48Mhz)             ///< Declaración de la frec. del Oscilador
-#use fast_io(A)                        ///< Configuracion E/S para el PORT A
-#use fast_io(B)                        ///< Configuracion E/S para el PORT B
+#use standard_io(A)                    ///< Configuracion E/S para el PORT A
+#use standard_io(B)                    ///< Configuracion E/S para el PORT B
 #build(reset=0x02000,interrupt=0x02008)///< Asignación de los vectores de reset e interrupción
 #org 0x0000,0x1FFF {}                  ///< Reservación espacio en la memoría
 ```
