@@ -1,6 +1,7 @@
 #include <18F45K50.h>                                // Para PIC18F4550 cambiar por: #include <18F4550.h>
 //#use delay(internal=48MHz)                          // Tipo de oscilador y frecuencia dependiendo del microcontrolador 
 #use delay(internal=500kHz) 
+//#use standard_io(A)
 #build(reset=0x02000,interrupt=0x02008)      // Asigna los vectores de reset e interrupción para la versión con bootloader
 #org 0x0000,0x1FFF {}                                  // Reserva espacio en memoria para el bootloader
 
@@ -16,12 +17,13 @@
 #define col0 PIN_B4       //Columnas del teclado
 #define col1 PIN_B5
 #define col2 PIN_B6
+#
 //#define col3 PIN_B7
 
 #include "Teclado4x3.h"                                     //LIBRERIA DE TECLADO
 #include <lcd.c>
 #include <stdlib.h>
-#rom 0x2100={'7','2','3'}
+//#rom 0x2100={'7','2','3'}
 
 void main(){
    char k;
@@ -41,10 +43,10 @@ void main(){
          }
       }
       
-      for(i = 0; i <= 2; i++){ clave[i] = read_eeprom(i); }
-      if((data[0]==clave[0]) && (data[1]==clave[1]) && (data[2]==clave[2])){
+      //for(i = 0; i <= 2; i++){ clave[i] = read_eeprom(i); }
+      if((data[0]=='7') && (data[1]=='2') && (data[2]=='3')){
          printf(lcd_putc,"\fPuerta Abierta");
-         output_high (PIN_A0);
+         output_high(PIN_A0);
          delay_ms (500) ;
          output_low (PIN_A0) ;
       } 
