@@ -44,6 +44,7 @@ mostrará el mensaje _"Puerta Cerrada"_ en el **_LCD_**, por ultimo habra un del
 existe una condición que comprueba si el boton conectado a `A0` ha sido presionado, de ser así, el contador `item`
 
 ** _Revisa el archivo [`teclado-1-0.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/teclado-1-0.c) para más información_
+<br/>
 *** _Para el ejemplo 5 revisa el archivo [`teclado_matricial_2.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/teclado_matricial_2.c)_
 
 ##### Iván Montiel Cardona
