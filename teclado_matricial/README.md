@@ -22,9 +22,7 @@ Recuerda no olvidar las siguientes lineas de configuración, son fundamentales p
 #org 0x0000,0x1FFF {}                  ///< Reservación espacio en la memoría
 ```
 
-Para este ejercicio se utilizo una version modificada de la librería `kbd.c` obtenida de [Microside](https://microside.com/portfolio-item/practica-10-ccs-as/), 
-nuevamente adaptada a los requerimientos de este ejemplo (Vease [`Teclado4x3.h`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/Teclado4x3.h) para mas información).
-Debido a esto se declararon dentro del programa las filas y columnas a usar.
+* _Para este ejercicio se utilizo una version modificada de la librería `kbd.c` obtenida de [Microside](https://microside.com/portfolio-item/practica-10-ccs-as/), nuevamente adaptada a los requerimientos de este ejemplo (Vease [`Teclado4x3.h`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/Teclado4x3.h) para mas información). Debido a esto se declararon dentro del programa las filas y columnas a usar._
 
 ```c
 #define row0 PIN_B0      //Fila A del teclado (colocar resistecia pullup)
