@@ -28,7 +28,7 @@
 void main(){
    char k;
    int i;
-   char data[3], clave[3];
+   char data[3];
    lcd_init();
    kbd_init();                                                    //inicialización del teclado.
    while(true){
