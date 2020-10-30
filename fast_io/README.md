@@ -103,7 +103,7 @@ else {
 ```
 ---
 
-1. Revisa el archivo [`fast_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c) para más información
+#### 1. Revisa el archivo [`fast_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c) para más información
 
 ---
 
