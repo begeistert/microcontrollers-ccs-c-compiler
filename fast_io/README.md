@@ -1,4 +1,22 @@
-# Programa 1 - Puertos fast_io
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/fast_io">
+    <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/pic.png" alt="Logo" width="200" height="200">
+  </a>
+
+  <h2 align="center">Microcontroladores</h2>
+  <h3 align="center">Programa 1 - Puertos fast_io</h3>
+  <p align="center">
+    Programa para apagar y encender un LED mediante un botón
+    <br />
+    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c"><strong>Ve el código fuente »</strong></a>
+    <br />
+  </p>
+  </p>
+
+
+# 
 ## Programa para apagar y encender un LED mediante un botón
 
 ### Descripción:
@@ -6,7 +24,7 @@
 Mediante el puerto `A0` conectado a un botón en _pull-up_ se encendera un _**LED**_, si el pin `A0` se encuentra en `0` el pin `B0` activara el _**LED**_ de lo contrario lo apagará
 
 La configuracion de los puertos se realiza usando `fast_io`
-- Esta directiva afecta al código que el compilador generará para las instrucciones de entrada y salida. Este método rápido de hacer I/O ocasiona que el compilador realice I/O sin programar el registro de dirección
+> Esta directiva afecta al código que el compilador generará para las instrucciones de entrada y salida. Este método rápido de hacer I/O ocasiona que el compilador   realice I/O sin programar el registro de dirección
 
 ## Circuito
 
@@ -50,13 +68,40 @@ void main(){
 
 Con el codigo anterior, los puertos A y B quedarian configurados de la siguente manera:
 
+<center>
+
 | Puerto |  Pin 0  |  Pin 1  |  Pin 2  |  Pin 3  |  Pin 4  |  Pin 5  |  Pin 6  |  Pin 7  |
 | :----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 |   A    | Entrada | Entrada | Entrada | Entrada | Entrada | Entrada | Entrada | Entrada |
 |   B    | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  |
 
-Dentro del método [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41) se han declarado condiciones que permiten una configuración _pull-up_ a la entrada, la cual será el pin `A0`. La condición define que si
-`A0`== `0` el  _**LED**_ en `B0` (que funge como salida) se encenderá, en caso de que la condición `A0` == `1` se cumpla,  `B0` tendrá a la salida `0` o `false` y el _**LED**_ se apagará
+</center>
+
+Dentro del método [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41) se han declarado condiciones que permiten una configuración _pull-up_ a la entrada, la cual será el pin `A0`.
+
+```c
+if(input(PIN_A0) == 1){
+  ...
+} else {
+  ...
+}
+```
+
+La condición define que si`A0`== `1` el  _**LED**_ en `B0` (que funge como salida) se apagará
+
+```c
+if(input(PIN_A0) == 1){
+  output_LOW(PIN_B0);
+}
+```
+
+En caso de que la condición `A0` == `0` se cumpla,  `B0` tendrá a la salida `1` o `true` y el _**LED**_ se encenderá
+
+```c
+else {
+  output_HIGH(PIN_B0);
+}
+```
 
 ** _Revisa el archivo [`fast_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c) para más información_
 
