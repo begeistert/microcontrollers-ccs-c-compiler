@@ -1,13 +1,31 @@
-# Programa 2 - Puertos standard_io
-## Programa para apagar y encender un LED mediante un botón
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/fast_io#microcontroladores">
+    <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/pic.png" alt="Logo" width="200" height="200">
+  </a>
+
+  <h2 align="center">Microcontroladores</h2>
+  <h3 align="center">Programa 2 - Puertos standard_io</h3>
+  <p align="center">
+    Programa para apagar y encender un LED mediante un botón
+    <br />
+    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c"><strong>Ve el código fuente »</strong></a>
+    <br />
+  </p>
+  </p>
+
+---
 
 ### Descripción:
 
 Mediante el puerto `A0` conectado a un botón en _pull-up_ se encendera un _**LED**_, si el pin `A0` se encuentra en `0` el pin `B0` activara el _**LED**_ de lo contrario lo apagará
 
 La configuracion de los puertos se realiza usando `standard_io`
-- Esta directiva afecta al código que el compilador genera para las instrucciones de entrada y salida. El método `standard_io` causará que el compilador genere
-código para hacer que un pin de E/S sea entrada o salida cada vez que se utiliza.
+> Esta directiva afecta al código que el compilador genera para las instrucciones de entrada y salida. El método `standard_io` causará que el compilador genere
+  código para hacer que un pin de E/S sea entrada o salida cada vez que se utiliza.
+
+---
 
 ## Circuito
 
