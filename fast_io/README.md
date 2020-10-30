@@ -15,9 +15,7 @@
   </p>
   </p>
 
-
-# 
-## Programa para apagar y encender un LED mediante un botón
+---
 
 ### Descripción:
 
@@ -25,6 +23,8 @@ Mediante el puerto `A0` conectado a un botón en _pull-up_ se encendera un _**LE
 
 La configuracion de los puertos se realiza usando `fast_io`
 > Esta directiva afecta al código que el compilador generará para las instrucciones de entrada y salida. Este método rápido de hacer I/O ocasiona que el compilador   realice I/O sin programar el registro de dirección
+
+---
 
 ## Circuito
 
@@ -102,6 +102,7 @@ else {
   output_HIGH(PIN_B0);
 }
 ```
+---
 
 ** _Revisa el archivo [`fast_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c) para más información_
 
