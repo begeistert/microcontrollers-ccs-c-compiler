@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="hhttps://github.com/begeistert/microcontrollers-ccs-c-compiler">
+  <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler">
     <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/pic.png" alt="Logo" width="200" height="200">
   </a>
 
