@@ -18,6 +18,19 @@
     ·
     <a href="https://github.com/begeistert/Sherlock/microcontrollers-ccs-c-compiler">Solicitar una programa</a>
   </p>
+  
+<p align="center">
+  <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"></a>
+  <a href="https://github.com/sponsors/begeistert">
+    <img src="https://img.shields.io/github/last-commit/begeistert/microcontrollers-ccs-c-compiler">
+  </a>
+  <a href="https://github.com/sponsors/begeistert">
+    <img src="https://img.shields.io/github/languages/code-size/begeistert/microcontrollers-ccs-c-compiler">
+  </a>
+  <a href="https://github.com/sponsors/begeistert">
+    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
+  </a>
+</p>
 </p>
 
 ## Acerca del Proyecto
