@@ -47,7 +47,7 @@ Recuerda no olvidar las siguientes lineas de configuración, son fundamentales p
 #org 0x0000,0x1FFF {}                  ///< Reservación espacio en la memoría
 ```
 
-Para este programa se ha usado un metodo de configuración denominado [`SisInit()`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L27), esto es necesario debido a la impelentación `fast_io(x)`, para la cual es necesario definir entradas y salidas en el puerto seleccionado, el metodo de configuración se ha definido de la siguiente manera[^1]
+Para este programa se ha usado un metodo de configuración denominado [`SisInit()`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L27), esto es necesario debido a la impelentación `fast_io(x)`, para la cual es necesario definir entradas y salidas en el puerto seleccionado, el metodo de configuración se ha definido de la siguiente manera [^1]
 
 
 ```c
