@@ -43,7 +43,7 @@ Recuerda no olvidar las siguientes lineas de configuración, son fundamentales p
 ```
 * Cuando se hace uso de `standard_io(x)` no es requerido declarar si el pin de determinado puerto es entrada o salida, por lo que para este caso se omitirá
 
-Dentro del método [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41)[<sup>1</sup>](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/standard_io/README.md#1-revisa-el-archivo-fast_ioc-para-m%C3%A1s-informaci%C3%B3n) se han declarado condiciones que permiten una configuración _pull-up_ a la entrada, la cual será el pin `A0`.
+Dentro del método [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41)[<sup>1</sup>](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/standard_io/README.md#1-revisa-el-archivo-standard_ioc-para-m%C3%A1s-informaci%C3%B3n) se han declarado condiciones que permiten una configuración _pull-up_ a la entrada, la cual será el pin `A0`.
 
 ```c
 if(input(PIN_A0) == 1){
