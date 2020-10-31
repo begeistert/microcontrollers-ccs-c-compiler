@@ -1,3 +1,21 @@
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/fast_io#microcontroladores">
+    <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/pic.png" alt="Logo" width="200" height="200">
+  </a>
+
+  <h3 align="center">Microcontroladores</h3>
+  <h4 align="center">Programa 5 - Teclado Matricial</h4>
+  <p align="center">
+    Programa para habilitar un relay por medio de un código / Mostrar un string en un LCD
+    <br />
+    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/teclado_matricial_2.c"><strong>Ve el código fuente (Ejercicio 5) »</strong></a>
+    <br/>
+    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/teclado-1-0.c"><strong>Ve el código fuente (Ejercicio 6) »</strong></a>
+    <br />
+  </p>
+  </p>
 # Programa 5 - Teclado Matricial
 ## Programa para habilitar un relay por medio de un código
 
