@@ -18,10 +18,12 @@
   <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/Teclado4x3.h"><strong>Ve el código fuente (Librería) »</strong></a>
   </p>
   </p>
+  
+## Ejercicio 5
 
 ### Descripción:
 
-Mediante un _**LCD**_ conectado al `PORT D`, un teclado matricial 4x3 conectado al `PORT B` y un circuito con relay conectado al pin `A0`
+Mediante un teclado matricial 4x3 conectado al `PORT B` activar un circuito con relay conectado al pin `A0` y mostrar un mensaje de "Cerradura Abierta" en el _**LCD**_ conectado al `PORT D`, 
 
 ## Circuito
 
@@ -59,8 +61,10 @@ inmediatamente despues se habilitará el pin `A0`, lo que cambiara la posición 
 mostrará el mensaje _"Puerta Cerrada"_ en el **_LCD_**, por ultimo habra un delay de `1s` antes de volver a iniciar todo el ciclo.
 existe una condición que comprueba si el boton conectado a `A0` ha sido presionado, de ser así, el contador `item`
 
+<!--
 ** _Revisa el archivo [`teclado-1-0.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/teclado-1-0.c) para más información_
 <br/>
 *** _Para el ejemplo `5` revisa el archivo [`teclado_matricial_2.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/teclado_matricial_2.c)_
+-->
 
 ##### Iván Montiel Cardona
