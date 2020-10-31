@@ -5,8 +5,8 @@
     <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/pic.png" alt="Logo" width="200" height="200">
   </a>
 
-  <h2 align="center">Microcontroladores</h2>
-  <h3 align="center">Programa 2 - Puertos standard_io</h3>
+  <h3 align="center">Microcontroladores</h3>
+  <h4 align="center">Programa 2 - Puertos standard_io</h4>
   <p align="center">
     Programa para apagar y encender un LED mediante un botón
     <br />
