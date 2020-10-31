@@ -79,8 +79,29 @@ Con el codigo anterior, los puertos A y B quedarian configurados de la siguente 
 |   B    | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  |
 
 Para habilitar los segmentos correctos del display se hace uso de un array unidimensional de 10 elementos denominado display, donde cada elemento de este arreglo
-representará los numeros de `0` a `9` en codificación para display de 7 segmentos, las configuraciones se muestran (para **catodo común**)en la siguente tabla a 
-modo de valores booleanos (`true` y `false`):
+representará los numeros de `0` a `9` en codificación para display de 7 segmentos
+```c
+byte const display[10] = { 0x3f,
+                           0x06,
+                           0X5b,
+                           0x4f,
+                           0x66,
+                           0x6d,
+                           0x7d,
+                           0x07,
+                           0x7f,
+                           0x6f};
+
+```
+Las configuraciones se muestran (para **catodo común**)en la siguente tabla a modo de valores booleanos (`true` y `false`):
+
+<br/>
+<p align="center">
+  <img src="http://www.redusers.com/noticias/wp-content/uploads/2016/01/Display_Letras.jpg" width="201.6" height="232">
+  <br/>
+  <sub><stroke>Segmentos del display de 7 segmentos</stroke></sub>
+</p>
+<br/>
 
 | Numero |    a    |    b    |    c    |    d    |    e    |    f    |    g    |
 | :----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | 
@@ -95,12 +116,47 @@ modo de valores booleanos (`true` y `false`):
 |   8    | `true`  | `true`  | `true`  | `true`  | `true`  | `true`  | `true`  |
 |   9    | `true`  | `true`  | `true`  | `true`  | `false` | `true`  | `true`  |
 
-En caso de usar un display en **anodo común** simplemente se debe ontener el complemento de cada valor en la tabla
+<sub>En caso de usar un display en **anodo común** simplemente se debe ontener el complemento de cada valor en la tabla</sub>
 
-Dentro del método [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/e05545064d016ff100d04a41fce35f53ccc1ec49/display_7_seg_0-99/display_0-99.c#L39)
-se han declarado un par de ciclos anidados que recorrerán el arreglo `display`, el ciclo mas anidado recorrera las unidades y las mostrara en el display de unidades, 
-cuando este ciclo se haya concluido, el `for` superior aumentara en uno el contador de decenas y volverá a entrar al ciclo más "profundo", pero esta vez mostrara
-el digitos de las decenas multiplexeando el display, esto continuará hasta llegar a 99, momento en el cual los ciclos se reiniciarán y el conteo volverá a comenzar.
+Dentro del método [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/e05545064d016ff100d04a41fce35f53ccc1ec49/display_7_seg_0-99/display_0-99.c#L39) se han declarado un par de ciclos anidados que recorrerán el arreglo `display`.
+
+```c
+for (dec=0;dec<10;dec++){
+  for (ud=0;ud<10;ud++){
+    ...
+  }
+}
+```
+
+El ciclo mas anidado recorrera las unidades y las mostrara en el display de unidades.
+
+```c
+for (dec=0;dec<10;dec++){
+  for (ud=0;ud<10;ud++){
+    output_a(0x02);
+    output_b(DISPLAY[ud]);
+    delay_ms(50);
+    ...
+  }
+}
+```
+
+Cuando este ciclo se haya concluido, el `for` superior aumentara en uno el contador de decenas y volverá a entrar al ciclo más "profundo", pero esta vez mostrara
+el digito de las decenas multiplexeando el display
+
+```c
+for (dec=0;dec<10;dec++){
+  for (ud=0;ud<10;ud++){
+    ...
+    if (dec==0) output_a(0x03);
+    else output_a(0x01);
+    output_b(DISPLAY[dec]);
+    delay_ms(50);
+  }
+}
+```
+
+Esto continuará hasta llegar a 99, momento en el cual los ciclos se reiniciarán y el conteo volverá a comenzar.
 
 ** _Revisa el archivo [`display_0-99.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/display_7_seg_0-99/display_0-99.c) para más información_
 
