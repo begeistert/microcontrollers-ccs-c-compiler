@@ -38,8 +38,6 @@ En este repositorio serán almacenados y descritos periodicamente los algoritmos
 provistos por el libro _"Compilador C CCS Y Simulador PROTEUS para Microcontroladores PIC"_.
 Cada uno de los ejercicios aqui mostrados será descrito por un archivo `README` individual, podras acceder a ellos en los enlaces de abajo.
 
--------
-
 ## Indice
 
 - [X] [Puertos `fast_io`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/fast_io)
@@ -52,8 +50,6 @@ Cada uno de los ejercicios aqui mostrados será descrito por un archivo `README`
 - [ ] [`Timer 1`](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
 - [ ] [`Timer 1` overflow](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
 - [ ] [`Timer 0`como contador](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
-
---------
 
 ## Requerimientos
 
