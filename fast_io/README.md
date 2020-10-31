@@ -4,9 +4,8 @@
   <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/fast_io#microcontroladores">
     <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/pic.png" alt="Logo" width="200" height="200">
   </a>
-
-  <h2 align="center">Microcontroladores</h2>
-  <h3 align="center">Programa 1 - Puertos fast_io</h3>
+  <h3 align="center">Microcontroladores</h3>
+  <h4 align="center">Programa 1 - Puertos fast_io</h4>
   <p align="center">
     Programa para apagar y encender un LED mediante un botón
     <br />
@@ -103,8 +102,8 @@ else {
 ```
 ---
 
-#### 1. Revisa el archivo [`fast_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c) para más información
+##### 1. Revisa el archivo [`fast_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c) para más información
 
 ---
 
-##### Iván Montiel Cardona
+###### Iván Montiel Cardona
