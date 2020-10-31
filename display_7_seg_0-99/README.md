@@ -29,7 +29,7 @@ La configuracion de los puertos se realiza usando `fast_io`
   <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/display_0-99.jpg?raw=true">
 </p>
 
-### En caso de no disponer de un display doble, es posible realizar la sigiente configuración con dos displays independientes
+En caso de no disponer de un display doble, es posible realizar la sigiente configuración con dos displays independientes
 
 <p align="center">
   <img src="http://www.redusers.com/noticias/wp-content/uploads/2016/01/Display_PinOut.jpg">
