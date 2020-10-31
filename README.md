@@ -49,7 +49,7 @@ Cada uno de los ejercicios aqui mostrados será descrito por un archivo `README`
 - [ ] [`Timer 0`](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
 - [ ] [`Timer 1`](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
 - [ ] [`Timer 1` overflow](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
-- [ ] [`Timer 0`como contador](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
+- [ ] [`Timer 0` como contador](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
 
 ## Requerimientos
 
