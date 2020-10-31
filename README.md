@@ -27,6 +27,9 @@
   <a href="https://github.com/sponsors/begeistert">
     <img src="https://img.shields.io/github/languages/code-size/begeistert/microcontrollers-ccs-c-compiler">
   </a>
+  <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/releases">
+    <img src="https://img.shields.io/github/downloads/begeistert/microcontrollers-ccs-c-compiler/1.0.0/total?color=green&label=download&logo=github">
+  </a>
   <a href="https://github.com/sponsors/begeistert">
     <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
   </a>
