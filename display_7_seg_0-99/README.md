@@ -1,5 +1,19 @@
-# Programa 3 - Display de 7 segmentos de 0 a 99
-## Programa para hacer un conteo de 0 a 99 en un display de 7 segmentos multiplexeado
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/fast_io#microcontroladores">
+    <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/pic.png" alt="Logo" width="200" height="200">
+  </a>
+
+  <h3 align="center">Microcontroladores</h3>
+  <h4 align="center">Programa 3 - Display de 7 segmentos de 0 a 99</h4>
+  <p align="center">
+    Programa para hacer un conteo de 0 a 99 en un display de 7 segmentos multiplexeado
+    <br />
+    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/display_7_seg_0-99/display_0-99.c"><strong>Ve el código fuente »</strong></a>
+    <br />
+  </p>
+  </p>
 
 ### Descripción:
 
