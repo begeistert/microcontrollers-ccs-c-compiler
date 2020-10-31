@@ -1,6 +1,20 @@
-# Programa 4 - Display _LCD_
-## Programa para hacer un menú con un display _LCD_
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/fast_io#microcontroladores">
+    <img src="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/circuits/pic.png" alt="Logo" width="200" height="200">
+  </a>
 
+  <h3 align="center">Microcontroladores</h3>
+  <h4 align="center">Programa 4 - Display LCD</h4>
+  <p align="center">
+    Programa para hacer un menú con un display LCD
+    <br />
+    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/display-LCD/display_LCD.c"><strong>Ve el código fuente »</strong></a>
+    <br />
+  </p>
+  </p>
+  
 ### Descripción:
 
 Mediante un _**LCD**_ conectado al `PORT D`, dos botones que serviran como los selectores en los pines `A0` y `A1` y 3 _**LEDs**_  conectadoas a los pines `C0`,
