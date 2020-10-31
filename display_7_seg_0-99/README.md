@@ -103,7 +103,7 @@ Las configuraciones se muestran (para **catodo común**)en la siguente tabla a m
 </p>
 <br/>
 
-| Numero |    a    |    b    |    c    |    d    |    e    |    f    |    g    |
+| Numero |    A    |    B    |    C    |    D    |    E    |    F    |    G    |
 | :----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | 
 |   0    | `true`  | `true`  | `true`  | `true`  | `true`  | `true`  | `false` |
 |   1    | `false` | `true`  | `true`  | `false` | `false` | `false` | `false` |
