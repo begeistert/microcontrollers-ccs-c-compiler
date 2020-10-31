@@ -53,9 +53,9 @@ Cada uno de los ejercicios aqui mostrados será descrito por un archivo `README`
 
 ## Requerimientos
 
-- [CCS C Compiler](http://www.ccsinfo.com/content.php?page=compilers)
+- [CCS C Compiler v5+](http://www.ccsinfo.com/content.php?page=compilers)
   - Ya que fue el único IDE capaz de ejecutar codigo C para estos fines
-- [Proteus](https://www.labcenter.com/)
+- [Proteus v8.10+](https://www.labcenter.com/)
   - Se encargara de levar a cabo las simulaciones del código
 
 ## Licencia
