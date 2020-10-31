@@ -14,10 +14,9 @@
     <br/>
     <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/teclado-1-0.c"><strong>Ve el código fuente (Ejercicio 6) »</strong></a>
     <br />
+  <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/Teclado4x3.h"><strong>Ve el código fuente (Librería) »</strong></a>
   </p>
   </p>
-# Programa 5 - Teclado Matricial
-## Programa para habilitar un relay por medio de un código
 
 ### Descripción:
 
