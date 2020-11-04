@@ -17,11 +17,16 @@
 
 ### Descripción:
 
-Mediante el puerto `A0` conectado a un botón en _pull-up_ se encendera un _**LED**_, si el pin `A0` se encuentra en `0` el pin `B0` activara el _**LED**_ de lo contrario lo apagará
+Mediante el puerto `A0` conectado a un botón en _pull-up_ se encendera un
+_**LED**_, si el pin `A0` se encuentra en `0` el pin `B0` activara el _**LED**_
+de lo contrario lo apagará
 
 La configuracion de los puertos se realiza usando `standard_io`
-> Esta directiva afecta al código que el compilador genera para las instrucciones de entrada y salida. El método `standard_io` causará que el compilador genere
-  código para hacer que un pin de E/S sea entrada o salida cada vez que se utiliza.
+
+> Esta directiva afecta al código que el compilador genera para las
+> instrucciones de entrada y salida. El método `standard_io` causará que el
+> compilador genere código para hacer que un pin de E/S sea entrada o salida
+> cada vez que se utiliza.
 
 ## Circuito
 
@@ -31,7 +36,8 @@ La configuracion de los puertos se realiza usando `standard_io`
 
 ### Instrucciones
 
-Recuerda no olvidar las siguientes lineas de configuración, son fundamentales para el PIC `18F45K50`
+Recuerda no olvidar las siguientes lineas de configuración, son fundamentales
+para el PIC `18F45K50`
 
 ```c
 #include <18F45K50.h>                  ///< Importación de librería para el PIC
@@ -41,9 +47,14 @@ Recuerda no olvidar las siguientes lineas de configuración, son fundamentales p
 #build(reset=0x02000,interrupt=0x02008)///< Asignación de los vectores de reset e interrupción
 #org 0x0000,0x1FFF {}                  ///< Reservación espacio en la memoría
 ```
-* Cuando se hace uso de `standard_io(x)` no es requerido declarar si el pin de determinado puerto es entrada o salida, por lo que para este caso se omitirá
 
-Dentro del método [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41)[<sup>1</sup>](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/standard_io/README.md#1-revisa-el-archivo-standard_ioc-para-m%C3%A1s-informaci%C3%B3n) se han declarado condiciones que permiten una configuración _pull-up_ a la entrada, la cual será el pin `A0`.
+- Cuando se hace uso de `standard_io(x)` no es requerido declarar si el pin de
+  determinado puerto es entrada o salida, por lo que para este caso se omitirá
+
+Dentro del método
+[`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41)[<sup>1</sup>](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/standard_io/README.md#1-revisa-el-archivo-standard_ioc-para-m%C3%A1s-informaci%C3%B3n)
+se han declarado condiciones que permiten una configuración _pull-up_ a la
+entrada, la cual será el pin `A0`.
 
 ```c
 if(input(PIN_A0) == 1){
@@ -53,7 +64,8 @@ if(input(PIN_A0) == 1){
 }
 ```
 
-La condición define que si`A0`== `1` el  _**LED**_ en `B0` (que funge como salida) se apagará
+La condición define que si`A0`== `1` el _**LED**_ en `B0` (que funge como
+salida) se apagará
 
 ```c
 if(input(PIN_A0) == 1){
@@ -61,13 +73,15 @@ if(input(PIN_A0) == 1){
 }
 ```
 
-En caso de que la condición `A0` == `0` se cumpla,  `B0` tendrá a la salida `1` o `true` y el _**LED**_ se encenderá
+En caso de que la condición `A0` == `0` se cumpla, `B0` tendrá a la salida `1` o
+`true` y el _**LED**_ se encenderá
 
 ```c
 else {
   output_HIGH(PIN_B0);
 }
 ```
+
 ---
 
 ##### 1. Revisa el archivo [`standard_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/f4610e37ce9313f6c1a660e468bdaa2b84d419a9/standard_io/standard_io.c) para más información

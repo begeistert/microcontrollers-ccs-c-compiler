@@ -23,7 +23,9 @@
 
 ### Descripción:
 
-Mediante un teclado matricial 4x3 conectado al `PORT B` activar un circuito con relay conectado al pin `A0` y mostrar un mensaje de "Cerradura Abierta" en el _**LCD**_ conectado al `PORT D`, 
+Mediante un teclado matricial 4x3 conectado al `PORT B` activar un circuito con
+relay conectado al pin `A0` y mostrar un mensaje de "Cerradura Abierta" en el
+_**LCD**_ conectado al `PORT D`,
 
 ## Circuito
 
@@ -33,7 +35,8 @@ Mediante un teclado matricial 4x3 conectado al `PORT B` activar un circuito con 
 
 ### Instrucciones
 
-Recuerda no olvidar las siguientes lineas de configuración, son fundamentales para el PIC `18F45K50`
+Recuerda no olvidar las siguientes lineas de configuración, son fundamentales
+para el PIC `18F45K50`
 
 ```c
 #include <18F45K50.h>                  ///< Importación de librería para el PIC
@@ -42,7 +45,13 @@ Recuerda no olvidar las siguientes lineas de configuración, son fundamentales p
 #org 0x0000,0x1FFF {}                  ///< Reservación espacio en la memoría
 ```
 
-* _Para este ejercicio se utilizo una version modificada de la librería `kbd.c` obtenida de [Microside](https://microside.com/portfolio-item/practica-10-ccs-as/), nuevamente adaptada a los requerimientos de este ejemplo (Vease [`Teclado4x3.h`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/Teclado4x3.h) para mas información). Debido a esto se declararon dentro del programa las filas y columnas a usar._
+- _Para este ejercicio se utilizo una version modificada de la librería `kbd.c`
+  obtenida de
+  [Microside](https://microside.com/portfolio-item/practica-10-ccs-as/),
+  nuevamente adaptada a los requerimientos de este ejemplo (Vease
+  [`Teclado4x3.h`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/Teclado4x3.h)
+  para mas información). Debido a esto se declararon dentro del programa las
+  filas y columnas a usar._
 
 ```c
 #define row0 PIN_B0      //Fila A del teclado (colocar resistecia pullup)
@@ -54,12 +63,18 @@ Recuerda no olvidar las siguientes lineas de configuración, son fundamentales p
 #define col2 PIN_B6      //Columna 3 del teclado
 ```
 
-Dentro del método [`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/955a77aec47d7b38fe45dcb9f0f0ef2d24f79b96/teclado_matricial/teclado-1-0.c#L28)
-se ha declarado un bucle infinito, dentro del cual, mediante distintas variables de contro y el arreglo `data` se obtienen las teclas presionadas, posterior a ello 
-una condicion `if` comprueba que todos los datos ingresados en el array `data` coincidan con la clave, de sera así se mostrará en el _**LCD**_ la frase _"Puerta Abierta"_, 
-inmediatamente despues se habilitará el pin `A0`, lo que cambiara la posición del relay durante `500ms`, despues de eso, el relay regresará a su posicion original y se 
-mostrará el mensaje _"Puerta Cerrada"_ en el **_LCD_**, por ultimo habra un delay de `1s` antes de volver a iniciar todo el ciclo.
-existe una condición que comprueba si el boton conectado a `A0` ha sido presionado, de ser así, el contador `item`
+Dentro del método
+[`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/955a77aec47d7b38fe45dcb9f0f0ef2d24f79b96/teclado_matricial/teclado-1-0.c#L28)
+se ha declarado un bucle infinito, dentro del cual, mediante distintas variables
+de contro y el arreglo `data` se obtienen las teclas presionadas, posterior a
+ello una condicion `if` comprueba que todos los datos ingresados en el array
+`data` coincidan con la clave, de sera así se mostrará en el _**LCD**_ la frase
+_"Puerta Abierta"_, inmediatamente despues se habilitará el pin `A0`, lo que
+cambiara la posición del relay durante `500ms`, despues de eso, el relay
+regresará a su posicion original y se mostrará el mensaje _"Puerta Cerrada"_ en
+el **_LCD_**, por ultimo habra un delay de `1s` antes de volver a iniciar todo
+el ciclo. existe una condición que comprueba si el boton conectado a `A0` ha
+sido presionado, de ser así, el contador `item`
 
 <!--
 ** _Revisa el archivo [`teclado-1-0.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/teclado-1-0.c) para más información_
