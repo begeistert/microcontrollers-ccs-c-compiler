@@ -43,11 +43,11 @@ Cada uno de los ejercicios aqui mostrados será descrito por un archivo `README`
 
 ## Indice
 
-- [X] [Puertos `fast_io`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/fast_io)
-- [X] [Puertos `standard_io`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/standard_io)
-- [X] [Display 7 seg 0-99 ](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/display_7_seg_0-99)
-- [X] [Display LCD-funciones](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/display-LCD)
-- [X] [Teclado Matricial](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/teclado_matricial)
+- [X] [Puertos `fast_io`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/fast_io)
+- [X] [Puertos `standard_io`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/standard_io)
+- [X] [Display 7 seg 0-99 ](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/display_7_seg_0-99)
+- [X] [Display LCD-funciones](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/display-LCD)
+- [X] [Teclado Matricial](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/teclado_matricial)
 - [ ] [Interrupción exterior por `RB0`](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
 - [ ] [`Timer 0`](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
 - [ ] [`Timer 1`](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
