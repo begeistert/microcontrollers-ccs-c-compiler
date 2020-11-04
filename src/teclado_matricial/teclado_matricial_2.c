@@ -5,7 +5,7 @@
 //#use standard_io(A)
 #build(reset = 0x02000,                                                        \
        interrupt = 0x02008) // Asigna los vectores de reset e interrupción para
-                            // la versión con bootloader
+// la versión con bootloader
 #org 0x0000, 0x1FFF {}      // Reserva espacio en memoria para el bootloader
 
 //#define LED PIN_A1                                       //Pin donde está
@@ -28,31 +28,31 @@
 //#rom 0x2100={'7','2','3'}
 
 void main() {
-  char k;
-  int x;
-  lcd_init();
-  kbd_init(); // inicialización del teclado.
-  lcd_putc("\fListo.. . \n");
-  while (true) {
-    k = kbd_getc();
-    x = k - 48;
-    if (k != 0) {
-      if (k == '*') {
-        lcd_putc("\fListo.. . \n");
-      } else {
-        lcd_putc(k);
-        // delay_ms(500);
+    char k;
+    int x;
+    lcd_init();
+    kbd_init(); // inicialización del teclado.
+    lcd_putc("\fListo.. . \n");
+    while (true) {
+        k = kbd_getc();
+        x = k - 48;
+        if (k != 0) {
+            if (k == '*') {
+                lcd_putc("\fListo.. . \n");
+            } else {
+                lcd_putc(k);
+                // delay_ms(500);
 
-        // printf(lcd_putc, "\f Car=%c",k);
-        // delay_ms(500);
+                // printf(lcd_putc, "\f Car=%c",k);
+                // delay_ms(500);
 
-        // printf (lcd_putc,"\f Car=%u",k);
-        // delay_ms(500);
+                // printf (lcd_putc,"\f Car=%u",k);
+                // delay_ms(500);
 
-        // printf (lcd_putc,"\f Num=%u",x) ;
-        // delay_ms(500);
-        // lcd_putc ("\fListo. . . \n") ;
-      }
+                // printf (lcd_putc,"\f Num=%u",x) ;
+                // delay_ms(500);
+                // lcd_putc ("\fListo. . . \n") ;
+            }
+        }
     }
-  }
 }

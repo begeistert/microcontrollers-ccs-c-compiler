@@ -9,21 +9,21 @@
 #org 0x0000, 0x1FFF {} // Reserva espacio en memoria para el bootloader
 
 void SisInit() {
-  set_tris_b(0x00);                      // C2 salida
-  setup_timer_0(T0_INTERNAL | T0_DIV_2); //|T0_DIV_4
-  set_timer0(0X1B);
-  enable_interrupts(INT_TIMER0);
-  enable_interrupts(GLOBAL);
+    set_tris_b(0x00);                      // C2 salida
+    setup_timer_0(T0_INTERNAL | T0_DIV_2); //|T0_DIV_4
+    set_timer0(0X1B);
+    enable_interrupts(INT_TIMER0);
+    enable_interrupts(GLOBAL);
 }
 
 #int_TIMER0
 void TIMER0_isr() {
-  output_toggle(PIN_B0); // Salida Pin_C2 50Hz
-  set_timer0(0X1B);      // 20 miliSegundos
+    output_toggle(PIN_B0); // Salida Pin_C2 50Hz
+    set_timer0(0X1B);      // 20 miliSegundos
 }
 
 void main() {
-  SisInit();
-  while (TRUE) {
-  };
+    SisInit();
+    while (TRUE) {
+    };
 }
