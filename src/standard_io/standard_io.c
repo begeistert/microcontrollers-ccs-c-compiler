@@ -12,12 +12,14 @@
   @date 10/2020
 
 */
-#include <18F45K50.h>                  ///< Importación de librería para el PIC
-#use delay(internal=48Mhz)             ///< Declaración de la frec. del oscilador
-#use standard_io(A)                    ///< Configuracion E/S para el PORT A
-#use standard_io(B)                    ///< Configuracion E/S para el PORT B
-#build(reset=0x02000,interrupt=0x02008)///< Asignación de los vectores de reset e interrupción
-#org 0x0000,0x1FFF {}                  ///< Reservación espacio en la memoría
+#include <18F45K50.h>        ///< Importación de librería para el PIC
+#use delay(internal = 48Mhz) ///< Declaración de la frec. del oscilador
+#use standard_io(A)          ///< Configuracion E/S para el PORT A
+#use standard_io(B)          ///< Configuracion E/S para el PORT B
+#build(reset = 0x02000,                                                        \
+       interrupt =                                                             \
+           0x02008)    ///< Asignación de los vectores de reset e interrupción
+#org 0x0000, 0x1FFF {} ///< Reservación espacio en la memoría
 
 /**
  * Funcion principal, realizarará todas las operaciones cicladas que deseemos
@@ -26,18 +28,15 @@
 
 void main() {
 
-    while(true) {                ///< Inicio de bucle infinito
+  while (true) { ///< Inicio de bucle infinito
 
-        if(input(PIN_A0) == 1) { ///< Condición: En tanto el pin A0 sea 1 o True
+    if (input(PIN_A0) == 1) { ///< Condición: En tanto el pin A0 sea 1 o True
 
-            output_LOW(PIN_B0); ///< El pin B0 se apagará (LED)
+      output_LOW(PIN_B0); ///< El pin B0 se apagará (LED)
 
-        } else {               ///< Si el pin A0 no es 1 o True
+    } else { ///< Si el pin A0 no es 1 o True
 
-            output_HIGH(PIN_B0);///< El pin B0 se encenderá
-
-        }
-
+      output_HIGH(PIN_B0); ///< El pin B0 se encenderá
     }
-
+  }
 }
