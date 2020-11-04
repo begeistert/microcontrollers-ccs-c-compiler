@@ -20,31 +20,30 @@
            0x02008)    ///< Asignación de los vectores de reset e interrupción
 #org 0x0000, 0x1FFF {} ///< Reservación espacio en la memoría
 byte const display[10] = {0x3f, 0x06, 0X5b, 0x4f, 0x66,
-                          0x6d, 0x7d, 0x07, 0x7f, 0x6f
-                         };
+                          0x6d, 0x7d, 0x07, 0x7f, 0x6f};
 
 void SistInit() {
-    set_tris_b(0x00);
-    set_tris_a(0x00);
-    output_b(0);
+  set_tris_b(0x00);
+  set_tris_a(0x00);
+  output_b(0);
 }
 
 void main() {
-    byte ud = 0, dec = 0;
-    SistInit();
-    for (;;) {
-        for (dec = 0; dec < 10; dec++) {
-            for (ud = 0; ud < 10; ud++) {
-                output_a(0x02);
-                output_b(DISPLAY[ud]);
-                delay_ms(50);
-                if (dec == 0)
-                    output_a(0x03);
-                else
-                    output_a(0x01);
-                output_b(DISPLAY[dec]);
-                delay_ms(50);
-            }
-        }
+  byte ud = 0, dec = 0;
+  SistInit();
+  for (;;) {
+    for (dec = 0; dec < 10; dec++) {
+      for (ud = 0; ud < 10; ud++) {
+        output_a(0x02);
+        output_b(DISPLAY[ud]);
+        delay_ms(50);
+        if (dec == 0)
+          output_a(0x03);
+        else
+          output_a(0x01);
+        output_b(DISPLAY[dec]);
+        delay_ms(50);
+      }
     }
+  }
 }

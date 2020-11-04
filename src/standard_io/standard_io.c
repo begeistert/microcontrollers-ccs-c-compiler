@@ -28,15 +28,15 @@
 
 void main() {
 
-    while (true) { ///< Inicio de bucle infinito
+  while (true) { ///< Inicio de bucle infinito
 
-        if (input(PIN_A0) == 1) { ///< Condición: En tanto el pin A0 sea 1 o True
+    if (input(PIN_A0) == 1) { ///< Condición: En tanto el pin A0 sea 1 o True
 
-            output_LOW(PIN_B0); ///< El pin B0 se apagará (LED)
+      output_LOW(PIN_B0); ///< El pin B0 se apagará (LED)
 
-        } else { ///< Si el pin A0 no es 1 o True
+    } else { ///< Si el pin A0 no es 1 o True
 
-            output_HIGH(PIN_B0); ///< El pin B0 se encenderá
-        }
+      output_HIGH(PIN_B0); ///< El pin B0 se encenderá
     }
+  }
 }

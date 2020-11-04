@@ -10,24 +10,24 @@
 #use standard_io(B)
 
 void SisInit() {                         // C2 salida
-    setup_timer_1(T0_INTERNAL | T0_DIV_8); //|T0_DIV_4
+  setup_timer_1(T0_INTERNAL | T0_DIV_8); //|T0_DIV_4
 }
 
 void templs() {
-    int cont = 0;
+  int cont = 0;
 
-    output_toggle(PIN_B1);
+  output_toggle(PIN_B1);
 
-    while (cont < 2) {
-        set_timer1(3036);
-        while (get_timer1() >= 3036)
-            ;
-        cont++;
-    }
+  while (cont < 2) {
+    set_timer1(3036);
+    while (get_timer1() >= 3036)
+      ;
+    cont++;
+  }
 }
 
 void main() {
-    SisInit();
-    while (TRUE) {
-    };
+  SisInit();
+  while (TRUE) {
+  };
 }
