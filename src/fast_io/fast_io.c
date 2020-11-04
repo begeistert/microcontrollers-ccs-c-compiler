@@ -5,7 +5,7 @@
   Mediante el puerto A0 conectado a un botón en pull-up se encendera un LED,
   si el pin A0 se encuentra en 0 el PIN B0 activara el LED de lo contrario lo
   apagará
-  
+
   ** Se configuraran los puertos mediante fast_io()
 
   @author Iván Montiel Cardona
@@ -25,14 +25,14 @@
  * El puerto B se define como entrada
  * @param None.
  */
- 
-void SisInit(){
-                      ///                  Pin Numero: 0|1|2|3|4|5|6|7
-                      ///                              ---------------
-   set_tris_a(0XFF);  ///< EL puerto A se define como (I|I|I|I|I|I|I|I)
-   set_tris_b(0X00);  ///< El puerto B se define como (O|O|O|O|O|O|O|O)
-   output_a(0X00);    ///< La salida del puerto A es  (0|0|0|0|0|0|0|0)
-                      ///  Donde I->Input y O->Output
+
+void SisInit() {
+    ///                  Pin Numero: 0|1|2|3|4|5|6|7
+    ///                              ---------------
+    set_tris_a(0XFF);  ///< EL puerto A se define como (I|I|I|I|I|I|I|I)
+    set_tris_b(0X00);  ///< El puerto B se define como (O|O|O|O|O|O|O|O)
+    output_a(0X00);    ///< La salida del puerto A es  (0|0|0|0|0|0|0|0)
+    ///  Donde I->Input y O->Output
 }
 
 /**
@@ -40,22 +40,22 @@ void SisInit(){
  * @param None.
  */
 
-void main(){
+void main() {
 
-   SisInit();                ///< Configuración de los puertos del PIC
-   
-   while(1){                 ///< Inicio de bucle infinito
-                              
-      if(input(PIN_A0) == 1){///< Condición: En tanto el pin A0 sea 1 o True
-         
-         output_LOW(PIN_B0); ///< El pin B0 se apagará (LED)
-         
-      } else {               ///< Si el pin A0 no es 1 o True
-      
-         output_HIGH(PIN_B0);///< El pin B0 se encenderá
-      
-      }
-   
-   }
+    SisInit();                ///< Configuración de los puertos del PIC
+
+    while(1) {                ///< Inicio de bucle infinito
+
+        if(input(PIN_A0) == 1) { ///< Condición: En tanto el pin A0 sea 1 o True
+
+            output_LOW(PIN_B0); ///< El pin B0 se apagará (LED)
+
+        } else {               ///< Si el pin A0 no es 1 o True
+
+            output_HIGH(PIN_B0);///< El pin B0 se encenderá
+
+        }
+
+    }
 
 }
