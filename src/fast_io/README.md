@@ -9,7 +9,7 @@
   <p align="center">
     Programa para apagar y encender un LED mediante un botón
     <br />
-    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c"><strong>Ve el código fuente »</strong></a>
+    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/src/fast_io/fast_io.c"><strong>Ve el código fuente »</strong></a>
     <br />
   </p>
   </p>
