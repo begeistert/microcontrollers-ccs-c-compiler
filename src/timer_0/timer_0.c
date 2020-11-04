@@ -1,11 +1,12 @@
 
 #include <18F45K50.h> // Para PIC18F4550 cambiar por: #include <18F4550.h>
 #use delay(internal = 48MHz) // Tipo de oscilador y frecuencia dependiendo del
-                             // microcontrolador
+// microcontrolador
 #build(reset = 0x02000,                                                        \
-       interrupt = 0x02008) // Asigna los vectores de reset e interrupción para
-                            // la versión con bootloader
-#org 0x0000, 0x1FFF {}      // Reserva espacio en memoria para el bootloader
+       interrupt =                                                             \
+           0x02008) // Asigna los vectores de reset e interrupción para
+// la versión con bootloader
+#org 0x0000, 0x1FFF {} // Reserva espacio en memoria para el bootloader
 
 void SisInit() {
   set_tris_b(0x00);                      // C2 salida
