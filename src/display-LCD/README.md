@@ -14,7 +14,7 @@
     <br />
   </p>
   </p>
-  
+
 ### Descripción:
 
 Mediante un _**LCD**_ conectado al `PORT D`, dos botones que serviran como los
