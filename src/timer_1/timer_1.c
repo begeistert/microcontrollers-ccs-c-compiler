@@ -1,6 +1,6 @@
 #include <18F45K50.h>        //Para PIC18F4550 cambiar por: #include <18F4550.h>
 #use delay(internal = 48Mhz) // Tipo de oscilador y frecuencia dependiendo del
-                             // microcontrolador
+// microcontrolador
 #build(reset = 0x02000,                                                        \
        interrupt =                                                             \
            0x02008) // Asignación de los vectores de reset e interrupción
