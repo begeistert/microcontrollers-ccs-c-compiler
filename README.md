@@ -48,11 +48,11 @@ Cada uno de los ejercicios aqui mostrados será descrito por un archivo `README`
 - [X] [Display 7 seg 0-99 ](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/display_7_seg_0-99)
 - [X] [Display LCD-funciones](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/display-LCD)
 - [X] [Teclado Matricial](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/teclado_matricial)
-- [ ] [Interrupción exterior por `RB0`](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
-- [ ] [`Timer 0`](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
-- [ ] [`Timer 1`](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
-- [ ] [`Timer 1` overflow](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
-- [ ] [`Timer 0` como contador](https://github.com/begeistert/microcontrollers-ccs-c-compiler)
+- [X] [Interrupción exterior por `RB0`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/interrupcion_rb0)
+- [X] [`Timer 0`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/timer_0)
+- [X] [`Timer 1`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/timer_1)
+- [X] [`Timer 1` overflow](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/timer_1_overflow)
+- [X] [`Timer 0` como contador](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/timer0_contador)
 
 ## Requerimientos
 
