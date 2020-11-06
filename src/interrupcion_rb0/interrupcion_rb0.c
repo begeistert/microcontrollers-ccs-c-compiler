@@ -2,8 +2,8 @@
 #use delay(internal = 48Mhz)
 #include <lcd.c>
 #use fast_io(B)
-#build(reset=0x02000,interrupt=0x02008)
-#org 0x0000,0x1FFF {}
+#build(reset = 0x02000, interrupt = 0x02008)
+#org 0x0000, 0x1FFF {}
 #int_ext
 void ext_isr() {
   printf(lcd_putc, "\fFuncion\nInterrupcion");
