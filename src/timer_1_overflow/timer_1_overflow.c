@@ -7,19 +7,19 @@
 #org 0x0000, 0x1FFF {}
 #use standard_io(B)
 void templs() {
-    int cont = 0;
-    output_toggle(PIN_B1);
-    while (cont < 2) // para contar 2 veces 0.5s
-    {
-        set_timer1(3036); // inicializa el TMR1
-        while (get_timer1() >= 3036)
-            ; // espera a que se desborde (0.5s)
-        cont++;
-    }
+  int cont = 0;
+  output_toggle(PIN_B1);
+  while (cont < 2) // para contar 2 veces 0.5s
+  {
+    set_timer1(3036); // inicializa el TMR1
+    while (get_timer1() >= 3036)
+      ; // espera a que se desborde (0.5s)
+    cont++;
+  }
 }
 void main() {
-    setup_timer_1(T1_INTERNAL | T1_DIV_BY_8);
-    while (true) {
-        templs(); // llamada a la funcion de temporizacion
-    }
+  setup_timer_1(T1_INTERNAL | T1_DIV_BY_8);
+  while (true) {
+    templs(); // llamada a la funcion de temporizacion
+  }
 }

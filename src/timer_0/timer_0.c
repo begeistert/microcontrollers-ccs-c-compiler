@@ -8,19 +8,19 @@
 #use standard_io(B)
 #int_TIMER0
 void TIMER0_isr(void) {
-    output_toggle(PIN_B0);
-    set_timer0(0x1B); // se recarga el timer0
+  output_toggle(PIN_B0);
+  set_timer0(0x1B); // se recarga el timer0
 }
 
 void enable() {
-    setup_timer_0(RTCC_INTERNAL | RTCC_DIV_2); // configuracion timer0
-    set_timer0(0x1B);                          // Carga del timer0
-    enable_interrupts(INT_TIMER0);             // habilita interrupcion timer0
-    enable_interrupts(global);                 // habilita interrupcion general
+  setup_timer_0(RTCC_INTERNAL | RTCC_DIV_2); // configuracion timer0
+  set_timer0(0x1B);                          // Carga del timer0
+  enable_interrupts(INT_TIMER0);             // habilita interrupcion timer0
+  enable_interrupts(global);                 // habilita interrupcion general
 }
 
 void main() {
-    enable();
-    while (true) { // bucle infinito
-    }
+  enable();
+  while (true) { // bucle infinito
+  }
 }
