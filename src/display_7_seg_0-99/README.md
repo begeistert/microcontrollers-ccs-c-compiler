@@ -132,7 +132,7 @@ modo de valores booleanos (`true` y `false`):
 |   8    | `true`  | `true`  | `true`  | `true`  | `true`  | `true`  | `true`  |
 |   9    | `true`  | `true`  | `true`  | `true`  | `false` | `true`  | `true`  |
 
-<sub>En caso de usar un display en **anodo común** simplemente se debe ontener
+<sub>En caso de usar un display en **anodo común** simplemente se debe obtener
 el complemento de cada valor en la tabla</sub>
 
 Dentro del método
