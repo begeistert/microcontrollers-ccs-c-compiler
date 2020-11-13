@@ -49,7 +49,7 @@ para el PIC `18F45K50`
 ```
 
 Para este programa se ha usado un metodo de configuración denominado
-[`SisInit()`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L27)[<sup>1</sup>](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/README.md#1-revisa-el-archivo-fast_ioc-para-m%C3%A1s-informaci%C3%B3n),
+[`SisInit()`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L27),
 esto es necesario debido a la impelentación `fast_io(x)`, para la cual es
 necesario definir entradas y salidas en el puerto seleccionado, el metodo de
 configuración se ha definido de la siguiente manera.
@@ -64,7 +64,7 @@ void SisInit(){
 
 Sin embargo, esto no es estrictamente necesario, es posible cambiar el nombre de
 la función o incluso añadirlo directamente al metodo
-[`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41)[<sup>1</sup>](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/README.md#1-revisa-el-archivo-fast_ioc-para-m%C3%A1s-informaci%C3%B3n),
+[`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41),
 por ejemplo
 
 ```c
@@ -85,7 +85,7 @@ manera:
 |   B    | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  | Salida  |
 
 Dentro del método
-[`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41)[<sup>1</sup>](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/README.md#1-revisa-el-archivo-fast_ioc-para-m%C3%A1s-informaci%C3%B3n)
+[`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41)
 se han declarado condiciones que permiten una configuración _pull-up_ a la
 entrada, la cual será el pin `A0`.
 
@@ -114,11 +114,5 @@ else {
   output_HIGH(PIN_B0);
 }
 ```
-
----
-
-##### 1. Revisa el archivo [`fast_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/fast_io/fast_io.c) para más información
-
----
 
 ###### Iván Montiel Cardona
