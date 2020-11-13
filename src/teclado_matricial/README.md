@@ -73,8 +73,7 @@ _"Puerta Abierta"_, inmediatamente despues se habilitará el pin `A0`, lo que
 cambiara la posición del relay durante `500ms`, despues de eso, el relay
 regresará a su posicion original y se mostrará el mensaje _"Puerta Cerrada"_ en
 el **_LCD_**, por ultimo habra un delay de `1s` antes de volver a iniciar todo
-el ciclo. existe una condición que comprueba si el boton conectado a `A0` ha
-sido presionado, de ser así, el contador `item`
+el ciclo.
 
 <!--
 ** _Revisa el archivo [`teclado-1-0.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/teclado-1-0.c) para más información_
