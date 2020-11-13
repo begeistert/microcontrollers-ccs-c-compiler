@@ -52,7 +52,7 @@ para el PIC `18F45K50`
   determinado puerto es entrada o salida, por lo que para este caso se omitirá
 
 Dentro del método
-[`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41)[<sup>1</sup>](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/standard_io/README.md#1-revisa-el-archivo-standard_ioc-para-m%C3%A1s-informaci%C3%B3n)
+[`main`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/fcfacda5cac251dd9f4ae61bc9bedbb9a21a5040/fast_io/fast_io.c#L41)
 se han declarado condiciones que permiten una configuración _pull-up_ a la
 entrada, la cual será el pin `A0`.
 
@@ -81,9 +81,5 @@ else {
   output_HIGH(PIN_B0);
 }
 ```
-
----
-
-##### 1. Revisa el archivo [`standard_io.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/f4610e37ce9313f6c1a660e468bdaa2b84d419a9/standard_io/standard_io.c) para más información
 
 ##### Iván Montiel Cardona
