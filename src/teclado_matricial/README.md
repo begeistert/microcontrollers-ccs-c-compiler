@@ -11,9 +11,9 @@
     Programa para habilitar un relay por medio de un código / Mostrar un string en un LCD
     <br />
     <br />
-    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/teclado_matricial_2.c"><strong>Ve el código fuente (Ejercicio 5) »</strong></a>
+    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/src/teclado_matricial/teclado_matricial_2.c"><strong>Ve el código fuente (Ejercicio 5) »</strong></a>
     <br/>
-    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/teclado-1-0.c"><strong>Ve el código fuente (Ejercicio 6) »</strong></a>
+    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/src/teclado_matricial/teclado-1-0.c"><strong>Ve el código fuente (Ejercicio 6) »</strong></a>
     <br />
   <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/teclado_matricial/Teclado4x3.h"><strong>Ve el código fuente (Librería) »</strong></a>
   </p>
