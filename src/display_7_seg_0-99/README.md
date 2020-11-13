@@ -180,8 +180,4 @@ for (dec=0;dec<10;dec++){
 Esto continuará hasta llegar a 99, momento en el cual los ciclos se reiniciarán
 y el conteo volverá a comenzar.
 
-\*\* _Revisa el archivo
-[`display_0-99.c`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/display_7_seg_0-99/display_0-99.c)
-para más información_
-
 ##### Iván Montiel Cardona
