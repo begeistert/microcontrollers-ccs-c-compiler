@@ -10,7 +10,7 @@
   <p align="center">
     Programa para hacer un menú con un display LCD
     <br />
-    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/display-LCD/display_LCD.c"><strong>Ve el código fuente »</strong></a>
+    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/blob/main/src/display-LCD/display_LCD.c"><strong>Ve el código fuente »</strong></a>
     <br />
   </p>
   </p>
