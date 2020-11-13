@@ -91,7 +91,7 @@ manera:
 
 Para habilitar los segmentos correctos del display se hace uso de un array
 unidimensional de 10 elementos denominado display, donde cada elemento de este
-arreglo representará los numeros de `0` a `9` en codificación para display de 7
+arreglo representará los numeros de `0` a `9` codificados para un display de 7
 segmentos
 
 ```c
