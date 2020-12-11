@@ -53,7 +53,7 @@ Cada uno de los ejercicios aqui mostrados será descrito por un archivo `README`
 - [X] [`Timer 1`](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/timer_1)
 - [X] [`Timer 1` overflow](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/timer_1_overflow)
 - [X] [`Timer 0` como contador](https://github.com/begeistert/microcontrollers-ccs-c-compiler/tree/main/src/timer0_contador)
-- [X] [ADC](src/ADC)
+- [X] [ADC](src/adc)
 
 
 ## Requerimientos
