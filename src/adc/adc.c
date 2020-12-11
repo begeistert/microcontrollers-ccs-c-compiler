@@ -12,14 +12,14 @@
 float valor;
 float voltaje;
 
-void main(){
+void main() {
     setup_adc(ADC_CLOCK_INTERNAL);         //Seleccionamos el reloj interno RC para ADC 35kHz.
     set_adc_channel(0);                    //Seleccionamos el canal 0.
     lcd_init();
     set_tris_a(0xFF); // PORTA -> Entrada
     lcd_putc('\f');
     lcd_gotoxy(1, 1);
-    while(true){
+    while(true) {
         delay_ms(100);
         valor = read_adc();
         voltaje = (valor*5.0)/1023;
