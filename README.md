@@ -16,7 +16,7 @@
     ·
     <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/issues">Reportar un Bug</a>
     ·
-    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler">Solicitar una programa</a>
+    <a href="https://github.com/begeistert/microcontrollers-ccs-c-compiler/issues">Solicitar una programa</a>
   </p>
   
 <p align="center">
