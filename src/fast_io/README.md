@@ -42,10 +42,16 @@ para el PIC `18F45K50`
 ```c
 #include <18F45K50.h>                  ///< Importación de librería para el PIC
 #use delay(internal=48Mhz)             ///< Declaración de la frec. del Oscilador
-#use fast_io(A)                        ///< Configuracion E/S para el PORT A
-#use fast_io(B)                        ///< Configuracion E/S para el PORT B
+/*
+Lineas especiales de configuración para el bootloader de la tarjeta XTRAINER LITE de Microside
+*/
 #build(reset=0x02000,interrupt=0x02008)///< Asignación de los vectores de reset e interrupción
 #org 0x0000,0x1FFF {}                  ///< Reservación espacio en la memoría
+```
+Uso de `fast_io`para tomar control de la configuración E/S de los puertos `A` y `B`
+```c
+#use fast_io(A)                        ///< Configuracion E/S para el PORT A
+#use fast_io(B)                        ///< Configuracion E/S para el PORT B
 ```
 
 Para este programa se ha usado un metodo de configuración denominado
